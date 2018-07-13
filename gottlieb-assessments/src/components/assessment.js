@@ -30,29 +30,31 @@ const styles = theme => ({
     margin: '35px auto',
     display: 'block',
     textAlign: 'center'
+  },
+  p: {
+    textAlign: 'right'
   }
 })
 
-const TextFields = ({ classes }) => (
+const start = Date.now()
+
+const Assessment = ({ assessment, classes }) => (
 
   <div className={classes.div}>
     <Paper className={classes.root} elevation={23}>
-      <Typography variant='headline' component='h1'>
-    CALCULUS 1 ASSESSMENT    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
-    CALCULUS 1 ASSESSMENT
+      <p className={classes.p}>{assessment.taker}</p>
 
+      <p onload={start} className={classes.p}>Date.n</p>
+
+      <Typography variant='headline' component='h1'>
+        {assessment.title}
       </Typography>
       <br />
       <Typography component='h2'>
       Created By:Tyler gottlieb
       </Typography>
 
-      <form className={classes.cpontainer} noValidate autoComplete='off'>
+      <form className={classes.container} noValidate autoComplete='off'>
         <TextField
           required
           id='coupon-title'
@@ -180,8 +182,8 @@ const TextFields = ({ classes }) => (
   </div>
 )
 
-TextFields.propTypes = {
+Assessment.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(TextFields)
+export default withStyles(styles)(Assessment)
