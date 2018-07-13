@@ -5,6 +5,9 @@ import TextField from '@material-ui/core/TextField'
 import Paper from '@material-ui/core/Paper'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import TimeAgo from 'react-timeago'
+import MultipleChoiceQuestion from './multichoice'
+import TrueFalseQuestion from './truefalse'
 
 const styles = theme => ({
   container: {
@@ -14,6 +17,7 @@ const styles = theme => ({
     margin: '35px auto',
     display: 'block',
     padding: '35px',
+    maxWidth: '350px',
     marginright: '150px',
     width: '50%'
 
@@ -24,7 +28,11 @@ const styles = theme => ({
   root: {
     margin: '50px auto',
     display: 'inline-block',
+    maxWidth: '750px',
     padding: '20px'
+  },
+  TimeAgo: {
+    color: 'green'
   },
   div: {
     margin: '35px auto',
@@ -36,24 +44,37 @@ const styles = theme => ({
   }
 })
 
-const start = Date.now()
-
 const Assessment = ({ assessment, classes }) => (
 
   <div className={classes.div}>
-    <Paper className={classes.root} elevation={23}>
+    <Paper className={classes.root} elevation={15}>
       <p className={classes.p}>{assessment.taker}</p>
-
-      <p onload={start} className={classes.p}>Date.n</p>
-
       <Typography variant='headline' component='h1'>
         {assessment.title}
       </Typography>
       <br />
+      <span>
+      Deadline: <TimeAgo className={classes.TimeAgo} date={assessment.deadline} />
+      </span>
+      <br />
+      <br />
       <Typography component='h2'>
-      Created By:Tyler gottlieb
+        <b>Directions:</b>{assessment.directions}
       </Typography>
-
+      <hr />
+      <Typography variant='headline' component='h2'>
+    Multiple Choice 
+      </Typography>
+      <hr />
+      <MultipleChoiceQuestion assessment={assessment} questionNumber={1} />
+      <hr />
+      <MultipleChoiceQuestion assessment={assessment} questionNumber={2} />
+      <hr />
+      <Typography variant='headline' component='h2'>
+      True/False Section
+      </Typography>
+      <hr />
+      <TrueFalseQuestion assessment={assessment} questionNumber={1} />
       <form className={classes.container} noValidate autoComplete='off'>
         <TextField
           required
@@ -174,6 +195,7 @@ const Assessment = ({ assessment, classes }) => (
           autoComplete='current-password'
           margin='normal'
         />
+
         <Button className={classes.button} variant='raised' color='default'>
         Submit
         </Button>

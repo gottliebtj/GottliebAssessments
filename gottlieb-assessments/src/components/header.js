@@ -11,7 +11,7 @@ const styles = {
   }
 }
 
-const Header = ({title = 'Snapsmall'}) => {
+const Header = ({title = 'Gottlieb Assessments'}) => {
   return (
     <AppBar position='static' >
       <Toolbar>

@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './components/header'
 import RegisterForm from './components/registerform'
 import Faq from './components/funnypage'
+import MultipleChoiceQuestion from './components/multichoice'
 import Assessment from './components/assessment'
 import Assessments from './assessment-bank.json'
 
@@ -21,6 +22,7 @@ const AssessmentPage = ({ assessment, match }) => {
     <div>
       <Header />
       <Assessment assessment={currentAssessment} />
+
     </div>
   )
 }
