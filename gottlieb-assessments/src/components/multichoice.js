@@ -14,12 +14,13 @@ import Typography from '@material-ui/core/Typography'
 
 const styles = theme => ({
   root: {
-    display: 'flex',
+    display: 'block',
     margin: 'auto',
-    width: '50%'
+    width: '100%',
   },
   formControl: {
     margin: theme.spacing.unit ,
+      width: '75%'
   },
   h3: {
     color: 'black',
