@@ -7,8 +7,10 @@
     "timeframe":"2 hours",
     "taker": "Tyler Gottlieb",
     "multiChoiceQuestions":[
-      {"question":"Which of the following is NOT a primitive type in Java?","questionNumber":"1","overallQuestionNumber":"0", "possibilities":["int","double","String","boolean"], "answer":"String" },
-      {"question":"Which of the following is the correct keywork for inheritance from a parent class?","overallQuestionNumber":"1",  "questionNumber":"2", "possibilities":["Class GoldenRetriever extends Dog","Class Doberman inherit Dog","Class Pitbull implements Dog","Class SiberianHusky is Dog"], "answer":"Class GoldenRetriever extends Dog" }
+      {"question":"Which of the following is NOT a primitive type in Java?","questionNumber":"1", "possibilities":["int","double","String","boolean"], "answer":"String" },
+      {"question":"Which of the following is the correct keywork for inheritance from a parent class?", "questionNumber":"2", "possibilities":["Class GoldenRetriever extends Dog","Class Doberman inherit Dog","Class Pitbull implements Dog","Class SiberianHusky is Dog"], "answer":"Class GoldenRetriever extends Dog" },
+      {"question":"Which of the following is the correct keywork for inheritance from a parent class?",  "questionNumber":"3", "possibilities":["Class GoldenRetriever extends Dog","Class Doberman inherit Dog","Class Pitbull implements Dog","Class SiberianHusky is Dog"], "answer":"Class GoldenRetriever extends Dog" }
+
     ],
     "trueFalseQuestions":[
       { "question":"Issac Newton discovered calculus.", "answer":"true","questionNumber":"1", "overallQuestionNumber":"3",  "possibilities":["true","false"] },

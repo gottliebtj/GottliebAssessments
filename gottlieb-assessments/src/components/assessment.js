@@ -35,9 +35,11 @@ const styles = theme => ({
     color: 'green'
   },
   div: {
-    margin: '35px auto',
+    margin: 'auto',
     display: 'block',
-    textAlign: 'center'
+    textAlign: 'center',
+    backgroundColor: 'lightgray'
+
   },
   sectionheader: {
     color: 'blue'
@@ -73,6 +75,8 @@ const Assessment = ({ assessment, classes }) => (
       <MultipleChoiceQuestion assessment={assessment} questionNumber={1} />
       <hr />
       <MultipleChoiceQuestion assessment={assessment} questionNumber={2} />
+      <hr />
+      <MultipleChoiceQuestion assessment={assessment} questionNumber={3} />
       <hr />
       <Typography className={classes.sectionheader} variant='headline' component='h2'>
         {assessment.trueFalseQuestions.length} True/False
