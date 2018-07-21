@@ -9,6 +9,7 @@ import TimeAgo from 'react-timeago'
 import MultipleChoiceQuestion from './multichoice'
 import TrueFalseQuestion from './truefalse'
 import FillInBlankQuestion from './fillin'
+import ConfirmationWindow from './acknowledgement'
 
 const styles = theme => ({
   container: {
@@ -49,11 +50,14 @@ const styles = theme => ({
   }
 })
 
+
 const Assessment = ({ assessment, classes }) => (
 
   <div className={classes.div}>
     <Paper className={classes.root} elevation={15}>
       <p className={classes.p}>{assessment.taker}</p>
+      <p className={classes.p}>7/21/18</p>
+
       <Typography variant='headline' component='h1'>
         {assessment.title}
       </Typography>
@@ -86,6 +90,12 @@ const Assessment = ({ assessment, classes }) => (
       <hr />
       <TrueFalseQuestion assessment={assessment} questionNumber={2} />
       <hr />
+      <TrueFalseQuestion assessment={assessment} questionNumber={3} />
+      <hr />
+      <TrueFalseQuestion assessment={assessment} questionNumber={4} />
+      <hr />
+      <TrueFalseQuestion assessment={assessment} questionNumber={5} />
+      <hr />
       <Typography className={classes.sectionheader} variant='headline' component='h2'>
         {assessment.fillInBlankQuestions.length} Fill In the Blank
       </Typography>
@@ -95,9 +105,7 @@ const Assessment = ({ assessment, classes }) => (
       <FillInBlankQuestion assessment={assessment} questionNumber={2} />
       <br />
       <br />
-      <Button className={classes.button} variant='raised' color='primary'>
-        Submit
-      </Button>
+      <ConfirmationWindow />
     </Paper>
   </div>
 )

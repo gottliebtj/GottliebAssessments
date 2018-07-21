@@ -1,46 +1,58 @@
 [
   {
-    "id": "javaone",
+    "id": "java",
     "title": "Java Programming Language Assessment",
     "directions":"Please answer all questions to the best of your ability. A graphing calculator should not be needed but is permitted if the taker chooses to use it.You have until the deadline to finish this assessment. The use of a Calculator is permitted but not necessary to preform the following operations",
-    "deadline": "Jul 14, 2018",
+    "deadline": "Jul 28, 2018",
     "timeframe":"2 hours",
     "taker": "Tyler Gottlieb",
     "multiChoiceQuestions":[
       {"question":"Which of the following is NOT a primitive type in Java?","questionNumber":"1", "possibilities":["int","double","String","boolean"], "answer":"String" },
       {"question":"Which of the following is the correct keywork for inheritance from a parent class?", "questionNumber":"2", "possibilities":["Class GoldenRetriever extends Dog","Class Doberman inherit Dog","Class Pitbull implements Dog","Class SiberianHusky is Dog"], "answer":"Class GoldenRetriever extends Dog" },
-      {"question":"Which of the following is the correct keywork for inheritance from a parent class?",  "questionNumber":"3", "possibilities":["Class GoldenRetriever extends Dog","Class Doberman inherit Dog","Class Pitbull implements Dog","Class SiberianHusky is Dog"], "answer":"Class GoldenRetriever extends Dog" }
+      {"question":"What of the following Objects allows a GUI component for user input?",  "questionNumber":"3", "possibilities":["WinPlotter","Scanner","FileInputStream","JOptionPane"], "answer":"Class GoldenRetriever extends Dog" }
 
     ],
     "trueFalseQuestions":[
-      { "question":"Issac Newton discovered calculus.", "answer":"true","questionNumber":"1", "overallQuestionNumber":"3",  "possibilities":["true","false"] },
-      { "question":"Taking a derivative is the same as finding the instantanous rate of change.","overallQuestionNumber":"4",  "answer":"true","questionNumber":"2", "possibilities":["true","false"] }
+      { "question":"'Java Swing' is the most recent version of Java .", "answer":"false","questionNumber":"1", "overallQuestionNumber":"3",  "possibilities":["true","false"] },
+      { "question":"All objects are derived from the class 'Object'.", "answer":"true","questionNumber":"2", "possibilities":["true","false"] },
+      { "question":"Java is an object oriented programming language'.",  "answer":"true","questionNumber":"3", "possibilities":["true","false"] },
+      { "question":"Java and Javascript are the same language?",  "answer":"true","questionNumber":"4", "possibilities":["true","false"] },
+      { "question":"Java is the core language for mobile iOS applications",  "answer":"false","questionNumber":"5", "possibilities":["true","false"] }
+
+
 
     ],
     "fillInBlankQuestions":[
-      {"questionType":"fillBlank", "question":"What is the derivative of q=(3x-2)(10x-5)","questionNumber":"1","overallQuestionNumber":"5","answer":"60x-35" },
-      {"questionType":"fillBlank", "question":"A mathematician can undo a derivative by taking its  ","questionNumber":"2","overallQuestionNumber":"6",  "answer":"integral" }
+      { "question":"What syntax is used to instantiate an object of type 'Dog' with a String parameter called 'name' and a variable called 'dog'?","questionNumber":"1","answer":"Dog dog = new Dog(name)" },
+      { "question":"A 'try' block is always followed with a _____ block ","questionNumber":"2", "answer":"catch" }
     ]
 },
 {
-  "id": "algebra",
-  "title": "Algebra Basic Skills Assessment",
+  "id": "physicsone",
+  "title": "Physics 1 Skills Assessment",
   "directions":"Please answer all questions to the best of your ability. A graphing calculator should not be needed but is permitted if the taker chooses to use it.You have until the deadline to finish this assessment. The use of a Calculator is permitted but not necessary to preform the following operations",
-  "deadline": "Jul 14, 2018",
+  "deadline": "Jul 26, 2018",
   "timeframe":"2 hours",
   "taker": "Tyler Gottlieb",
   "multiChoiceQuestions":[
-    {"question":"What is the opposite of Division?","questionNumber":"1", "possibilities":["Subtraction","Multiplication","Addition","Modulus"], "answer":"Multiplication" },
-    {"question":"What is 345+7-20*0/360","questionNumber":"2", "possibilities":["10","325","0","15253"], "answer":"0" }
+    {"question":"Which of the following formulas is correct for Force","questionNumber":"1", "possibilities":["F= PI","F=3A+V","F=MA","F=M+A"], "answer":"F=MA" },
+    {"question":"Which of the following describe Newtons First law of Motion?", "questionNumber":"2", "possibilities":["Every object in a state of uniform motion tends to remain in that state of motion unless an external force is applied to it.","Every Force has an equal and Opposite Force","Forces diminish the amount of newtons as time passes","None of the above"], "answer":"Every object in a state of uniform motion tends to remain in that state of motion unless an external force is applied to it." },
+    {"question":"What of the following Objects allows a GUI component for user input?",  "questionNumber":"3", "possibilities":["WinPlotter","Scanner","FileInputStream","JOptionPane"], "answer":"Class GoldenRetriever extends Dog" }
+
   ],
   "trueFalseQuestions":[
-    { "question":"The order of operations says that subtraction is preformed before multiplication", "answer":"false","questionNumber":"1", "possibilities":["true","false"] },
-    { "question":"Equations written as F(x)=x^2 is the same as writing y=x^2", "answer":"true","questionNumber":"2", "possibilities":["true","false"] }
+    { "question":"The Integral of Acceleration is Velocity.", "answer":"true","questionNumber":"1", "overallQuestionNumber":"3",  "possibilities":["true","false"] },
+    { "question":"The Integral of Velocity is Displacement", "answer":"true","questionNumber":"2", "possibilities":["true","false"] },
+    { "question":"Physics is the study of the natural world and how it behaves together under specific conditions.",  "answer":"true","questionNumber":"3", "possibilities":["true","false"] },
+    { "question":"Calculus was derived from physics.",  "answer":"false","questionNumber":"4", "possibilities":["true","false"] },
+    { "question":"3D Vectors can be added to one another if you have the i and j components",  "answer":"false","questionNumber":"5", "possibilities":["true","false"] }
+
+
 
   ],
   "fillInBlankQuestions":[
-    {"questionType":"fillBlank", "question":"What is (25+10)/5What is (25+10)/5What is (25+10)/5What is (25+10)/5","questionNumber":"1", "answer":"7" },
-    {"questionType":"fillBlank", "question":"What is log5(x)=25What is (25+10)/5What is (25+10)/5What is (25+10)/5What is (25+10)/5What is (25+10)/5","questionNumber":"2", "answer":"1/5" }
+    { "question":"______ force is a force that acts on a body moving in a circular path and is directed toward the center around which the body is moving.","questionNumber":"1","answer":"Dog dog = new Dog(name)" },
+    { "question":"______ is the change in velocity over time","questionNumber":"2", "answer":"velocity" }
   ]
 }
 
